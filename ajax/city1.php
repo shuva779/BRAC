@@ -3,7 +3,7 @@ include '../connection.inc.php';
 
 $state_id =  $_POST['state_data'];
 
-$city = "SELECT * FROM upazilas WHERE district_id = $state_id";
+$city = "SELECT * FROM upazilas WHERE district_id = $state_id ORDER BY name";
 $city_qry = mysqli_query($conn, $city);
 
 

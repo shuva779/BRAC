@@ -14,7 +14,7 @@ if(!$conn){
 
 $country_id =   $_POST['country_data'];
 
-$state = "SELECT * FROM districts WHERE division_id = $country_id";
+$state = "SELECT * FROM districts WHERE division_id = $country_id ORDER BY name";
 
 $state_qry = mysqli_query($conn, $state);
 // $output="";

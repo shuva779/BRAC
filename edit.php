@@ -2,7 +2,7 @@
 include 'connection.inc.php';
 include('connections.php');
 
-$country = "SELECT * FROM divisions";
+$country = "SELECT * FROM divisions ORDER BY name";
 $county_qry = mysqli_query($conn, $country);
 $county_qry1 = mysqli_query($conn, $country);
 
@@ -109,7 +109,7 @@ $srch= $_GET['id'];
               </div>
               <div class="col-md-6">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="user_password" placeholder="Password"  value="<?php echo $password ?>">
+                <input type="password" class="form-control" name="user_password" placeholder="Password" value="<?php echo $password ?>"  required >
               </div>
                 <div class="col-md-6">
                 <label for="name" class="form-label">Division</label>
