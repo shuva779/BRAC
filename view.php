@@ -83,6 +83,10 @@ function get_all_data($conn){
         <td>'.$abc['user_branchName'].'</td>
         </tr>
         <tr>
+        <th scope="row">Region</th>
+        <td>'.$abc['user_region'].'</td>
+        </tr>
+        <tr>
         <th scope="row">RM Name</th>
         <td>'.$abc['user_rm'].'</td>
         </tr>
