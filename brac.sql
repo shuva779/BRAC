@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 24, 2022 at 05:25 PM
+-- Generation Time: Aug 24, 2022 at 08:34 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -41,7 +41,121 @@ INSERT INTO `branch` (`branch_id`, `branch_name`) VALUES
 (2, 'Mirpur (Pollobi)'),
 (3, 'Jatrabari '),
 (4, 'Banasree'),
-(5, 'Dhamrai');
+(5, 'Dhamrai'),
+(6, 'Rohitpur'),
+(7, 'Ashkona'),
+(8, 'Abdullahpur'),
+(9, 'Mohammadpur'),
+(10, 'Tongi'),
+(11, 'Naozore-Gazipur Center'),
+(12, 'Munsigonj Sadar'),
+(13, 'Sylhet Sadar Center'),
+(14, 'Manikgonj Sadar'),
+(15, 'Ghior'),
+(16, 'Boda'),
+(17, 'Fulbari'),
+(18, 'Lalmonirhat Sadar'),
+(19, 'Hatibandha'),
+(20, 'Rangpur Sadar(Darshana)'),
+(21, 'Taragonj'),
+(22, 'Pirgacha'),
+(23, 'Nilpahamari sadar'),
+(24, 'Pabna Sadar '),
+(25, 'Chatmahar'),
+(26, 'Dasuria'),
+(27, 'Sirajgonj Sadar'),
+(28, 'Shahajadpur'),
+(29, 'Ullapara'),
+(30, 'Bogura Sadar'),
+(31, 'Dupchachia'),
+(32, 'Mymensingh Sadar'),
+(33, 'Fulbaria'),
+(34, 'Fulpur'),
+(35, 'Jamalpur Sadar'),
+(36, 'Islampur'),
+(37, 'Dewangonj'),
+(38, 'Sherpur Sadar'),
+(39, 'Nalita Bari'),
+(40, 'Kishorgonj Sadar'),
+(41, 'Hossainpur'),
+(42, 'Cumilla Sadar'),
+(43, 'Laksham'),
+(44, 'Laxmipur Sadar'),
+(45, 'Raipur'),
+(46, 'Ramganj'),
+(47, 'Chandpur Sadar'),
+(48, 'Hajigonj'),
+(49, 'Panchlaish'),
+(50, 'Chalkbazar'),
+(51, 'Patia'),
+(52, 'Noakhali Sadar'),
+(53, 'Begomgonj'),
+(54, 'Udoyshadhur Haat'),
+(55, 'Akhaura'),
+(56, 'Sarail'),
+(57, 'Kasba'),
+(58, 'B Baria Sadar'),
+(59, 'Bandarban Sadar'),
+(60, 'Soalock'),
+(61, 'Alikadam'),
+(62, 'Rowanchhari'),
+(63, 'Naikhongchhari'),
+(64, 'Ruma'),
+(65, 'Thanchi'),
+(66, 'Rangamati Sadar'),
+(67, 'Narsingdi Sadar'),
+(68, 'Eidgaon'),
+(69, 'Cox\'s Bazar Sadar'),
+(70, 'Palpara'),
+(71, 'Mithasari'),
+(72, 'Ukhia'),
+(73, 'Moricha'),
+(74, 'Coatbazar'),
+(75, 'Thaingkhali'),
+(76, 'Hanila'),
+(77, 'Teknaf Sadar'),
+(78, 'Shyamlapur'),
+(79, 'Ramu'),
+(80, 'Panichara'),
+(81, 'Eidgor'),
+(82, 'Gorzonia'),
+(83, 'Kawarhop'),
+(84, 'Chakaria'),
+(85, 'Bethua Bazar'),
+(86, 'Harbang'),
+(87, 'Dulahazra'),
+(88, 'Khutakhali'),
+(89, 'Bodorkhali'),
+(90, 'Malmughat'),
+(91, 'Bottali'),
+(92, 'Rampura'),
+(93, 'Kutubdia'),
+(94, 'Moheshkhali'),
+(95, 'Saplapur'),
+(96, 'Huanok'),
+(97, 'Kalamchara'),
+(98, 'Matbaria'),
+(99, 'Hazibazar'),
+(100, 'Pekua'),
+(101, 'Arbasha Bazar'),
+(102, 'Daulatpur'),
+(103, 'Jashore Sadar'),
+(104, 'Monirampur'),
+(105, 'Tala'),
+(106, 'Kushtia Sadr'),
+(107, 'Bheramara'),
+(108, 'Chuadanga Sadar'),
+(109, 'Alomdanga'),
+(110, 'Barisal Sadar'),
+(111, 'Babuganj'),
+(112, 'Bhola Sadar'),
+(113, 'Charfashon'),
+(114, 'Kotalipara'),
+(115, 'Jajira'),
+(116, 'Kalkini'),
+(117, 'Rajbari Sadar'),
+(118, 'Rajshahi City'),
+(119, 'Paba');
 
 -- --------------------------------------------------------
 
@@ -172,19 +286,27 @@ CREATE TABLE `project` (
 --
 
 INSERT INTO `project` (`project_id`, `project_name`) VALUES
-(3, 'STAR'),
-(4, 'DID'),
-(5, 'IARMG'),
-(6, 'ERMG'),
-(7, 'PROSPER'),
-(8, 'PRIDE'),
-(9, 'SCF'),
-(10, 'PROMIS'),
-(11, 'BISD'),
-(12, 'B3'),
-(13, 'PRISE'),
-(14, 'ISD'),
-(15, 'CH');
+(24, 'STAR'),
+(25, 'DID'),
+(26, 'IARMG'),
+(27, 'ERMG'),
+(28, 'PROSPER'),
+(29, 'PRIDE'),
+(30, 'PROMISE'),
+(31, 'PRISE'),
+(32, 'Career Hub'),
+(33, 'REHAB'),
+(34, 'SIEP'),
+(35, 'SCF'),
+(36, 'NAKSHI'),
+(37, 'BISD'),
+(38, 'GRESP'),
+(39, 'PROMIS'),
+(40, 'CVDP'),
+(41, 'ISD'),
+(42, 'CH'),
+(43, 'B3'),
+(44, 'ED');
 
 -- --------------------------------------------------------
 
@@ -791,7 +913,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `branch`
 --
 ALTER TABLE `branch`
-  MODIFY `branch_id` bigint(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `branch_id` bigint(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 
 --
 -- AUTO_INCREMENT for table `districts`
@@ -809,7 +931,7 @@ ALTER TABLE `divisions`
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `project_id` bigint(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `project_id` bigint(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `upazilas`

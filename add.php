@@ -143,7 +143,7 @@ $county_qry1 = mysqli_query($conn, $country);
                     <select class="form-select multiple-select"  name="user_branchName[]" required multiple>
                         
             <?php
-          $query1="SELECT * FROM branch";
+          $query1="SELECT * FROM branch ORDER BY branch_name";
           $get_data1= mysqli_query($conn,$query1);
           if(mysqli_num_rows($get_data1)>0)
           {
@@ -190,7 +190,7 @@ $county_qry1 = mysqli_query($conn, $country);
                     <select class="form-select multiple-select"  name="user_projectName[]" required multiple>
                         
                         <?php
-          $query="SELECT * FROM project";
+          $query="SELECT * FROM project ORDER BY project_name";
           $get_data= mysqli_query($conn,$query);
           if(mysqli_num_rows($get_data)>0)
           {
